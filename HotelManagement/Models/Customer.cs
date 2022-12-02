@@ -14,5 +14,7 @@ namespace HotelManagement.Models
         public string Gender { get; set; }
         [Required]
         public int Mobile_No { get; set; }
-}
+        [Required]
+        public string Nationality { get; set; }
+    }
 }

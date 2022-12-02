@@ -31,6 +31,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.Mobile_No)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nationality)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -48,6 +51,9 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Mobile_No)
+            </td>
+             <td>
+                @Html.DisplayFor(modelItem => item.Nationality)
             </td>
             <td>
                 @if (SignInManager.IsSignedIn(User))

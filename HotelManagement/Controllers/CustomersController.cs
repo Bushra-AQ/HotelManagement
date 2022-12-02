@@ -69,7 +69,7 @@ namespace HotelManagement.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize]
-        public async Task<IActionResult> Create([Bind("id,Name,Address,Gender,Mobile_No")] Customer customer)
+        public async Task<IActionResult> Create([Bind("id,Name,Address,Gender,Mobile_No,Nationality")] Customer customer)
         {
             if (ModelState.IsValid)
             {
@@ -103,7 +103,7 @@ namespace HotelManagement.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize]
-        public async Task<IActionResult> Edit(int id, [Bind("id,Name,Address,Gender,Mobile_No")] Customer customer)
+        public async Task<IActionResult> Edit(int id, [Bind("id,Name,Address,Gender,Mobile_No,Nationality")] Customer customer)
         {
             if (id != customer.id)
             {
